@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Introducing Myself</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+ </head>
+ <body>
+     
+       
+       <h1 class="subheader">A little about me!</h2>
+       
+       <p>My name is Feven, and I’m a student at Seattle Central College. I’m studying the Software Development program. I’m on my journey to be in the tech field which is interesting. To pursue a career in the IT- field has been my dream since a few years ago. I’m happy that I got the chance to learn at Seattle Central College to be a software developer. The journey isn’t always easy, but I’m working hard to reach my goal.</p>
+       <p>In my free time, I love to cook food and to listen to music. I even like to walk in the nature and enjoying the view of the nature. During summer periods I enjoy cycling as well.</p>
+       <p>I have a few hobbies which are painting and decorating. Painting has been my hobby since childhood. But decorating a house or a room is my hobby which I developed during my late teenage years. I like my hobbies because they keep me happy and reduce my stress.</p>
+       
+       <script>
+        var user_name = document.getElementById("name");
+        document.getElementById("btn-alert").addEventListener("click", function(){
+            var value=user_name.value.trim();
+            if(!value)
+                alert("Name Cannot be empty!");
+            else
+                alert("Hello, " + value + "!\nGreetings From GeeksforGeeks.");
+        });
+    </script>
+    
+     <footer>
+      <p><small>&copy; 2023 by Feven Meselu, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>
